@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popular_mainLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/popular_btn"
+    android:elevation="3dp">
+
+    <TextView
+        android:id="@+id/popularprice_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 0.0 "
+        android:textColor="#293159"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/addbtn_popular"
+        app:layout_constraintEnd_toStartOf="@+id/addbtn_popular"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="@+id/popular_item1"
+        app:layout_constraintTop_toTopOf="@+id/addbtn_popular" />
+
+    <ImageView
+        android:id="@+id/popular_item1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chleg3" />
+
+    <TextView
+        android:id="@+id/popularTitle_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#293159"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/popular_item1"
+        app:layout_constraintStart_toStartOf="@+id/popular_item1"
+        app:layout_constraintTop_toBottomOf="@+id/popular_item1" />
+
+    <ImageButton
+        android:id="@+id/addbtn_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/plus_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/popular_item1"
+        app:layout_constraintTop_toBottomOf="@+id/popularTitle_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
